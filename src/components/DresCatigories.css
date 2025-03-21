@@ -1,0 +1,85 @@
+
+.dress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+   
+}
+
+.dress-content {
+    width: 100%;
+    max-width: 1440px;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dress-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dress-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.dress-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.dress-card:hover {
+    transform: scale(1.05);
+}
+
+.dress-card:nth-child(1),
+.dress-card:nth-child(2) {
+    height: 200px;
+}
+
+.dress-card:nth-child(3) {
+    grid-column: span 1;
+    height: 250px;
+}
+
+.dress-card:nth-child(4) {
+    grid-column: span 1;
+    height: 250px;
+}
+
+.dress-image {
+   
+    
+    object-fit: cover;
+}
+
+.dress-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .dress-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dress-card {
+        height: 180px !important;
+    }
+}

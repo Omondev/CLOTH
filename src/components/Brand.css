@@ -1,0 +1,45 @@
+
+
+.brand-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+        padding: 20px 0;
+}
+
+.brand-img {
+    max-height: 50px;
+    object-fit: contain;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .brand-container {
+        gap: 30px;
+    }
+
+    .brand-img {
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .brand-img {
+        max-height: 35px;
+    }
+}

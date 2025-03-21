@@ -1,0 +1,135 @@
+/* General Styles */
+.cotenr {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Filters Section */
+.filters {
+    width: 280px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filters h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.filters label,
+.filters select,
+.filters input {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.filters button {
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Product Section */
+.products-section {
+    flex-grow: 1;
+}
+
+.products-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.car img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.car h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.car p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-icon {
+    color: #000;
+    transition: 0.3s;
+}
+
+.cart-icon:hover {
+    color: #ff6600;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    background: #000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cotenr {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filters {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .car img {
+        height: 180px;
+    }
+}
