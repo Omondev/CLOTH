@@ -1,6 +1,6 @@
 
 import Hero from '../components/Hero'
-import Brand from '../components/brand'
+import Brand from '../components/Brand'
 import Card from '../components/Card'
 import DresStyle from '../components/DresCatigories'
 import HappyCustomers from '../components/HappyCostumers'
