@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./CartPage.css";
+import "./Cartpage.css";
 import StayUpdated from "../components/StayUpdate";
 import Footer from "../components/Footer"
 
